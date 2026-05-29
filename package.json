@@ -4,10 +4,11 @@
   "description": "",
   "license": "ISC",
   "author": "fcbedreski",
-  "type": "module",
   "main": "app.ts",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "csv-parser": "^3.2.1",
